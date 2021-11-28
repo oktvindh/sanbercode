@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <style>
+        .section-title {
+            text-align: center;
+        }
+        li {
+            list-style-type: none;
+        }
+    </style>
+
+<fieldset> <!-- membuat border -->
+    <div class="contact-form">
+        <h2 class="section-title">Hubungi kami</h2>
+        <h5 class="alamat-perusahaan">     
+            <ol>
+                <li><strong>Kantor :</strong>  Indah Oktaviana</li>
+                <li><strong>Nomor telepon :</strong>  08XX-XXXX-XXXX</li>
+                <li><strong>Email :</strong>  indahoktav02@gmail.com</li>    
+            </ol>
+        </h5>
+        <h2 class="section-title">Kirimkan pesan</h2>
+        
+
+        <p>
+            <label style="display: inline-block; width: 200px;">Nama </label>
+            <input style="display: inline-block;" type="text" name="nama"  />
+        </p>
+
+        <p>
+            <label style="display: inline-block; width: 200px;">Email </label>
+            <input style="display: inline-block;" type="text" name="email"  />
+        </p>
+
+        <!-- membuat radio button -->
+       <div style="display: block;">
+            <div style="display: inline-block; width: 200px;">Jenis Kelamin</div>
+            <div style="display: inline-block;">
+                <input type="radio" id="jenisKelamin" value="lakiLaki">
+                <label for="lakiLaki">Laki-Laki</label><br>
+                <input type="radio" id="jenisKelamin" value="perempuan">
+                <label for="perempuan">perempuan</label><br>
+            </div>
+    
+        </div>
+
+
+        <!-- menambahkan tag <textarea> --> 
+        <p>
+            <label style="display: inline-block; width: 200px;">Pesan Anda</label>
+            <textarea cols="40" rows="5"></textarea>
+            
+        </p>
+          
+        <!-- menambahkan tag <input> -->
+        <input class="contact-submit" type="submit" value="Kirim" style="margin-top: 10px; margin-bottom: 20px;">
+        
+    </div>
+</fieldset>
+
+    
+    <a href="index.html" class="tombol">
+        <button type="submit" style="margin-top: 40px;">kembali ke index</button>
+    </a>
+
+</body>
+</html>
